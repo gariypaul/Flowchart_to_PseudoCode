@@ -16,6 +16,7 @@
 #include <string> // for the fields in the class
 #include <vector> // for the flowchart structures
 #include <stack>  // for conversion
+#include <algorithm> // for all_of
 
 using namespace std;
 
@@ -279,13 +280,16 @@ int main()
                     endpos=operation.length();
                 }
                 string numstr = operation.substr(pos,endpos-pos);
-                int num = stoi(numstr);
-
-                newVector.push_back(num);
+                 if (!numstr.empty() && all_of(numstr.begin(), numstr.end(), ::isdigit)) {
+                    int num = stoi(numstr);
+                    newVector.push_back(num);
+                }
 
                 pos=endpos+1;
             }
             adjList.push_back(newVector);
+        }else{
+            cout << "Empty line" << endl;
         }
 
     }
@@ -301,11 +305,9 @@ int main()
         }
     }
     //Prints out the AdjList Vector
-    cout<<"AdjList:"<<endl;
     for(auto c:adjList){
-        cout<<c[0]<<": ";
-        for(int i=1;i<c.size();i++){
-            cout<<c[i]<<" ";
+        for(auto d:c){
+            cout<<d<<" ";
         }
         cout<<endl;
     }
