@@ -1,3 +1,0 @@
-C:/Users/gariy/OneDrive - University of Oklahoma/CS 2413/project5/cmake-build-debug/CMakeFiles/project5.dir
-C:/Users/gariy/OneDrive - University of Oklahoma/CS 2413/project5/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/gariy/OneDrive - University of Oklahoma/CS 2413/project5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
