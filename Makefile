@@ -10,7 +10,7 @@ TARGET = p5
 SRC = program.cpp
 
 # Input file
-INPUT = input2.txt
+INPUT = ./test_input/input1.txt
 
 # Default target
 all: $(TARGET)
